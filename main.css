@@ -1,0 +1,62 @@
+:root {
+  --code-height: 400px;
+  --code-width: 600px;
+  --code-width-close: -600px;
+}
+
+html,
+body,
+#viewDiv,
+#contentDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.top-nav {
+  /* background-color: #e8912e; */
+  background: -moz-linear-gradient(45deg, #d13d26 0%, #db5b22 20%, #e36e21 90%, #f2981c 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #d13d26 0%, #db5b22 20%, #b37044 90%, #f2981c 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #d13d26 0%, #db5b22 20%, #e36e21 90%, #f2981c 100%);
+}
+
+.top-nav-title {
+  color: #fff;
+}
+
+.top-nav-link {
+  color: #fff;
+}
+
+.icon-snippet:before {
+  content: "</>"
+}
+
+.demo-name {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: #fff;
+  padding: 1.1625rem 0 calc(1.1625rem - 4px) 0;
+  border: none;
+  border-bottom: 4px solid transparent;
+  line-height: 1.5rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.demo {
+  padding: 2em;
+}
+
+#code-snippet {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  width: var(--code-width);
+  margin-left: var(--code-width-close);
+}
